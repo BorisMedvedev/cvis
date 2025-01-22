@@ -32,7 +32,7 @@ div#questions {
 #progress-bar {
   height: 100%;
   width: 0;
-  background: #4caf50;
+  background: #f8545d;
   transition: width 0.1s;
 }
 
