@@ -3,7 +3,7 @@ const progressBar = document.getElementById('progress-bar');
 const nextButtons = document.querySelectorAll('button');
 
 function updateProgressBar() {
-  const percentage = ((currentQuestionIndex + 1) / 5) * 100; // Измените 5 на количество ваших вопросов
+  const percentage = ((currentQuestionIndex + 1) / 7) * 100; // Измените 5 на количество ваших вопросов
   progressBar.style.width = percentage + '%';
 }
 
