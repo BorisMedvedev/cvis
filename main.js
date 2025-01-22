@@ -52,5 +52,5 @@ window.onload = function () {
       percent += 2; // Параметр скорости загрузки
       progressBar.style.width = percent + '%';
     }
-  }, 100); // Обновление каждые 100 мс
+  }, 50); // Обновление каждые 100 мс
 };

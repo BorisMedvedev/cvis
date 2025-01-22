@@ -33,7 +33,7 @@ div#questions {
   height: 100%;
   width: 0;
   background: #4caf50;
-  transition: width 0.5s;
+  transition: width 0.1s;
 }
 
 .question {
@@ -53,7 +53,7 @@ div#questions {
 
 .option {
   position: relative;
-  max-width: 600px;
+  max-width: 350px;
   /* padding: 10px; */
   border: 1px solid #ccc;
   margin: 5px 0;
@@ -64,6 +64,7 @@ div#questions {
   height: 150px;
   overflow: hidden;
   border-radius: 8px;
+  display: block;
 }
 
 .option:hover {
@@ -72,6 +73,7 @@ div#questions {
 
 .option.selected {
   outline: 2px solid #f8545d;
+  max-width: 350px;
 }
 
 .option img {
@@ -114,4 +116,19 @@ button:disabled {
 .result {
   text-align: center;
   display: none;
+}
+
+.wrapper-box {
+  flex-direction: column;
+}
+
+.option-box {
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  width: 330px;
+}
+
+.wrapper__img {
+  max-width: 350px;
 }
