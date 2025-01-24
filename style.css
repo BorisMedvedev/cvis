@@ -5,7 +5,8 @@ body {
 }
 
 #quiz-container {
-  max-width: 350px;
+  max-width: 450px;
+  width: 100%;
   margin: 0 auto;
   background: white;
   padding: 35px;
@@ -15,6 +16,7 @@ body {
 
 div#questions {
   max-width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -25,7 +27,8 @@ div#questions {
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-  max-width: 350px;
+  max-width: 450px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -45,26 +48,44 @@ div#questions {
 }
 
 .wrapper {
+  width: 100%;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
+  justify-content: center;
 }
 
 .option {
   position: relative;
-  max-width: 350px;
-  /* padding: 10px; */
+  width: 100%;
   border: 1px solid #ccc;
   margin: 5px 0;
   cursor: pointer;
   border-radius: 5px;
   transition: background 0.3s;
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   overflow: hidden;
   border-radius: 8px;
-  display: block;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding-left: 30px;
+}
+input {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background 0.3s;
+  padding: 10px;
+  height: 35px;
+  max-width: 425px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  font-weight: 600;
+  padding-left: 30px;
 }
 
 .option:hover {
@@ -73,7 +94,6 @@ div#questions {
 
 .option.selected {
   outline: 2px solid #f8545d;
-  max-width: 350px;
 }
 
 .option img {
@@ -83,13 +103,14 @@ div#questions {
   left: 0;
   bottom: 0;
   z-index: 1;
-  width: 150px;
+  width: 210px;
 }
 
 .option span {
-  padding: 3px 0 3px 3px;
+  padding: 3px 0 3px 27px;
   position: absolute;
   z-index: 2;
+  left: 0;
   bottom: 0;
   display: block;
   color: #333;
@@ -97,12 +118,13 @@ div#questions {
   width: 100%;
 }
 
-button {
-  padding: 10px 20px;
+.btn {
+  padding: 20px 20px;
   background: #f8545d;
   color: white;
   border: none;
   border-radius: 8px;
+  max-width: 450px;
   width: 100%;
   cursor: pointer;
   transition: background 0.3s;
@@ -124,11 +146,16 @@ button:disabled {
 
 .option-box {
   padding: 10px;
-  width: 100%;
   height: 35px;
-  width: 330px;
+  max-width: 425px;
+  width: 100%;
 }
 
 .wrapper__img {
   max-width: 350px;
+}
+
+#bmi-category {
+  font-size: 26px;
+  font-weight: 600;
 }
