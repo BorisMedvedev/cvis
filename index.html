@@ -200,9 +200,8 @@
           </div>
           <button class="btn" id="next8" disabled>Далее</button>
         </div>
-
-        <!-- Добавьте последующие вопросы... -->
       </div>
+
       <div class="result" style="display: none">
         <h2>Спасибо за участие!</h2>
         <p>Ваши результаты будут обработаны.</p>
@@ -212,45 +211,9 @@
 
         <!-- Шкала визуализации -->
         <div class="wrapper">
-          <div id="progress-bar"></div>
-          <div
-            style="
-              position: relative;
-              width: 100%;
-              max-width: 400px;
-              height: 30px;
-              background: linear-gradient(to right, green, yellow, orange, red);
-              border: 1px solid #ccc;
-              border-radius: 5px;
-              margin-top: 10px;
-            "
-          >
-            <!-- Бегунок с ИМТ -->
-            <div
-              id="bmi-marker"
-              style="
-                position: absolute;
-                top: -5px;
-                width: 2px;
-                height: 40px;
-                background: black;
-              "
-            >
-              <span
-                id="bmi-value"
-                style="
-                  position: absolute;
-                  top: 0px;
-                  left: -10px;
-                  background-color: white;
-                  color: black;
-                  padding: 2px 5px;
-                  border: 1px solid #000;
-                  border-radius: 5px;
-                  font-size: 12px;
-                "
-                >0</span
-              >
+                      <!-- Бегунок с ИМТ -->
+            <div id="bmi-marker">
+              <span id="bmi-value">0</span>
             </div>
           </div>
 
@@ -258,12 +221,10 @@
             <strong>Текущий индекс массы тела</strong>:
             <span id="bmi-result"></span>
           </p>
-          <!-- <p><span id="bmi-category"></span></p>
-        <p id="bmi-description"></p> -->
         </div>
       </div>
     </div>
 
-    <script src="main.js" defer></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>

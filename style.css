@@ -1,17 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #f0f0f0;
 }
 
 #quiz-container {
   max-width: 450px;
   width: 100%;
-  margin: 0 auto;
-  background: white;
-  padding: 35px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: -3px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 div#questions {
@@ -22,11 +22,10 @@ div#questions {
 
 #progress-container {
   height: 5px;
-  background: #e0e0e0;
-  border-radius: 10px;
+  background-color: #edebeb;
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 20px;
   max-width: 450px;
   width: 100%;
   margin: 0 auto;
@@ -45,6 +44,10 @@ div#questions {
 
 .question.active {
   display: block;
+}
+
+.question.active h2 {
+  margin-bottom: 30px;
 }
 
 .wrapper {
@@ -120,7 +123,7 @@ input {
 }
 
 .btn {
-  padding: 20px 20px;
+  padding: 20px 0;
   background: #f8545d;
   color: white;
   border: none;
@@ -160,3 +163,41 @@ button:disabled {
   font-size: 28px;
   font-weight: 600;
 }
+
+.result h2,
+.result h3,
+.result p {
+  margin-bottom: 30px;
+}
+
+
+#bmi-value {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  background-color: white;
+  color: black;
+  padding: 2px 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+#bmi-marker {
+  position: absolute;
+  top: -5px;
+  width: 2px;
+  height: 40px;
+  background: black;
+}
+
+/* #progress-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  height: 30px;
+  background: linear-gradient(to right, green, yellow, orange, red);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+} */
