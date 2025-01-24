@@ -1,230 +1,269 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>quiz</title>
-  <link href="style.css" rel="stylesheet">
-
-</head>
-
-<body>
-  <div id="quiz-container">
-
-    <div id="progress-container">
-      <div id="progress-bar"></div>
-    </div>
-
-    <div id="questions">
-
-      <div class="question" id="question1">
-        <h2>Укажите свой возраст</h2>
-
-        <div class="wrapper">
-          <div class="option" data-value="18-29">
-            <img
-              src="https://avatars.mds.yandex.net/i?id=f9b9d5019704ad05120e24e9ba18d47ba24fdcfe-7555069-images-thumbs&n=13 width=90 height=70"
-              alt="">
-            <span>18-29 лет</span>
-          </div>
-          <div class="option" data-value="30-39">
-            <img
-              src="https://avatars.mds.yandex.net/i?id=83837ffae8de41c3d9e64fbfa888ca441a111935-10132637-images-thumbs&n=13 width=90 height=70"
-              alt="">
-            <span>30-39 лет</span>
-          </div>
-          <div class="option" data-value="40-49">
-            <img
-              src="https://yandex-images.clstorage.net/K9p73zr69/c2cae4AllCD/SbSeN1TsPTrQbafUYPrhk3jM-z432B9_iUuqL44ceCAGPV9G1tok8JoU9eY1UVWEC6c41W1-b5Y4xKvsB4UFUgjlzSbEK-rvAeoy1mA7oRQvnD95IVkIORncqGqZyzoiEqdFWx_Gaq6C3ym568HGFY2g-QJs63_Q_MBlNcNBFkLDPxq_VHy_fpa7oBiutyvfaYLz8GTaybWOHyorDMBpfo3rgFMdTelpxB2g8agAjVUQarcBIaHzSbrPqT4fh1uPgbUdepYytbFRe-CfbjmrlmlMe_2g0cGxytjqpIrCpzbNYc5VX0wgboyWqr2rDcjcFuu3Ra4v-IL9zKJ3nofSBYO73jGb8T9wH39gEOh3qZ2gx7f65J8APwvZYS8DAaH8jGPCG9tIaKWP2-QzaQ4O257g_ALhoXJIOs5g-pPPG4hKOBJ-GLc1v5804x3n-yTYboI4fq7fgjNIkGBqDAJuN0UmyRcTDqdti5HmPewPz1yVarPI5KnwR3GH6ruTiBMMhD0aOJIyPLZY822YIztul6MBPvYpXM05TVyg78dFrzqAYY8QmgyjKwcd6_IuDQ7cF6p0wa_pNAq8gKd6UksSgEQ0U_DbfvI3kvgiHqbw5BMty7d4JpENt4DY4KtPzOvzSy4MH9rL4GFIH-Z_IoXJG1VqfUvg4nBFM4uvvtEJUoSKt5OylHwysZzzYtWmuCmRLgv8NmgYBHBBGuumyY4rM0LsgdKdxaMhD9Yt9mEGBhPfYnVAL6N7x3DPa3rfANtKjLUccx07_jaQs6gXp3IrXCnLM7jvn0h0zVJurYEJbLaHpUSVFY5m4c1d5bcmx4qVFu-yCKyrfEc5wyA0WYPYAop8k7gV_f-zWL5oUWc27l3hBDf75RsNccTXa6UJSiD6T2GG1pfEpmzPFax5pIbBVt5kNEFmY_pKOgMocl0I2Y9MM9u1WHWzOFo-aRJpsuzdKk4wfWkZSviI0W1uSw width=90 height=70"
-              alt="">
-            <span>40-49 лет</span>
-          </div>
-          <div class="option" data-value="50+">
-            <img
-              src="https://avatars.mds.yandex.net/i?id=f9b9d5019704ad05120e24e9ba18d47ba24fdcfe-7555069-images-thumbs&n=13 width=90 height=70"
-              alt="">
-            <span>50+</span>
-          </div>
-        </div>
-        <button class="btn" id="next1" disabled>Далее</button>
-      </div>
-
-
-      <div class="question" id="question2">
-        <h2>Выбери свою цель</h2>
-        <div class="wrapper wrapper-box">
-          <div class="option option-box" data-value="снизить вес">Снизить вес
-          </div>
-          <div class="option option-box" data-value="вернуться к форме">
-            Вернуться к форме
-          </div>
-          <div class="option option-box" data-value="накачать мышцы">Накачать
-            мышцы</div>
-        </div>
-        <button class="btn" id="next2" disabled>Далее</button>
-      </div>
-
-
-      <div class="question" id="question3">
-        <h2>Выбери первое</h2>
-        <div class="wrapper wrapper-box">
-          <div class="option option-box" data-value="лёгкость и гибкость">
-            Стройная
-            лёгкость
-            и гибкость</div>
-          <div class="option option-box" data-value="баланс">Подтянутая баланс
-            между силой
-            и
-            стройностью</div>
-          <div class="option option-box" data-value="спорт">Спортивные развитые
-            мышцы и
-            высокая выносливость</div>
-        </div>
-        <button class="btn" id="next3" disabled>Далее</button>
-      </div>
-
-
-      <div class="question" id="question4">
-        <h2>Какого размера одежду ты носишь?</h2>
-        <div class="wrapper wrapper-box">
-          <div class="option option-box" data-value="2XS, XS">2XS, XS</div>
-          <div class="option option-box" data-value="S, M">S, M</div>
-          <div class="option option-box" data-value="L, XL">L, XL</div>
-          <div class="option option-box" data-value="2XL, 3XL">2XL, 3XL</div>
-        </div>
-        <button class="btn" id="next4" disabled>Далее</button>
-      </div>
-
-
-      <div class="question" id="question5">
-        <h2>Выбери процент жира</h2>
-        <div class="wrapper">
-          <div class="option" data-value="10-19%">
-            <img
-              src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/nH23D8.webp"
-              alt="">
-            <span>10-19%</span>
-          </div>
-          <div class="option" data-value="20-29%">
-            <img
-              src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/sN7jtT.webp"
-              alt="">
-            <span>20-29%</span>
-          </div>
-          <div class="option" data-value="30-39%">
-            <img
-              src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/ePDPJl.webp"
-              alt="">
-            <span>30-39%</span>
-          </div>
-          <div class="option" data-value="более 40%">
-            <img
-              src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/pGVOtt.webp"
-              alt="">
-            <span>Более 40%</span>
-          </div>
-          <p>Как правильно указать уровень жира?
-            10-19% - если отчетливо видны мышцы пресса
-            20-29% - мышцы пресса не видны, но талия выражена
-            30-39% - мягкий силуэт с заметными округлостями в области бедер и
-            талии
-            > 40% - тело выглядит достаточно мягким, талия визуально не
-            выделяется
-          </p>
-        </div>
-        <button class="btn" id="next5" disabled>Далее</button>
-      </div>
-
-
-
-      <div class="question" id="question6">
-        <h2>81% результата зависит
-          от питания</h2>
-        <div class="wrapper">
-          <img class="wrapper__img"
-            src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/zdz-q2.webp"
-            alt="">
-          <p>Чтобы сбросить вес, тебе необходимо:
-            ✅ Не превышать дневную норму калорий
-            ✅ Потреблять достаточное количество белка для восстановления и
-            роста мышц</p>
-          <div class="option option-box" data-value="2XS, XS">Все понятно</div>
-        </div>
-        <button class="btn" id="next6" disabled>Далее</button>
-      </div>
-
-
-
-      <div class="question" id="question7">
-        <h2>Выбери процент жира</h2>
-        <div class="wrapper">
-          <div class="option option-box"
-            data-value="Стройное: легкость и гибкость">Стройное: легкость и
-            гибкость</div>
-          <div class="option option-box"
-            data-value="Подтянутое: баланс между силой и стройностью">
-            Подтянутое: баланс между силой и стройностью</div>
-          <div class="option option-box"
-            data-value="Спортивное: развитые мышцы и высокая выносливость">
-            Спортивное: развитые мышцы и высокая выносливость</div>
-        </div>
-        <button class="btn" id="next7" disabled>Далее</button>
-      </div>
-
-
-
-      <div class="question" id="question8">
-        <h2>Введите свои данные</h2>
-        <div class="wrapper">
-          <label for="weight">Вес (кг):</label>
-          <input type="number" id="weight" placeholder="Введите ваш вес"
-            required />
-          <label for="height">Рост (см):</label>
-          <input type="number" id="height" placeholder="Введите ваш рост"
-            required />
-        </div>
-        <button class="btn" id="next8" disabled>Далее</button>
-      </div>
-
-
-
-      <!-- Добавьте последующие вопросы... -->
-
-    </div>
-    <div class="result" style="display:none;">
-      <h2>Спасибо за участие!</h2>
-      <p>Ваши результаты будут обработаны.</p>
-
-      <p id="bmi-category"></p>
-      <p id="bmi-description"></p>
-
-      <!-- Шкала визуализации -->
-      <div class="wrapper">
-
+  <body>
+    <div id="quiz-container">
+      <div id="progress-container">
         <div id="progress-bar"></div>
-        <div
-          style="position: relative; width: 100%; max-width: 400px; height: 30px; background: linear-gradient(to right, green, yellow, orange, red); border: 1px solid #ccc; border-radius: 5px; margin-top: 10px;">
-          <!-- Бегунок с ИМТ -->
-          <div id="bmi-marker"
-            style="position: absolute; top: -5px; width: 2px; height: 40px; background: black;">
-            <span id="bmi-value"
-              style="position: absolute; top: 0px; left: -10px; background-color: white; color: black; padding: 2px 5px; border: 1px solid #000; border-radius: 5px; font-size: 12px;">0</span>
-          </div>
-        </div>
-
-        <p><strong>Текущий индекс массы тела</strong>: <span
-            id="bmi-result"></span>
-        </p>
-        <!-- <p><span id="bmi-category"></span></p>
-        <p id="bmi-description"></p> -->
-
       </div>
 
+      <div id="questions">
+        <div class="question" id="question1">
+          <h2>Укажите свой возраст</h2>
+
+          <div class="wrapper">
+            <div class="option" data-value="18-29">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=f9b9d5019704ad05120e24e9ba18d47ba24fdcfe-7555069-images-thumbs&n=13 width=90 height=70"
+                alt=""
+              />
+              <span>18-29 лет</span>
+            </div>
+            <div class="option" data-value="30-39">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=83837ffae8de41c3d9e64fbfa888ca441a111935-10132637-images-thumbs&n=13 width=90 height=70"
+                alt=""
+              />
+              <span>30-39 лет</span>
+            </div>
+            <div class="option" data-value="40-49">
+              <img
+                src="https://yandex-images.clstorage.net/K9p73zr69/c2cae4AllCD/SbSeN1TsPTrQbafUYPrhk3jM-z432B9_iUuqL44ceCAGPV9G1tok8JoU9eY1UVWEC6c41W1-b5Y4xKvsB4UFUgjlzSbEK-rvAeoy1mA7oRQvnD95IVkIORncqGqZyzoiEqdFWx_Gaq6C3ym568HGFY2g-QJs63_Q_MBlNcNBFkLDPxq_VHy_fpa7oBiutyvfaYLz8GTaybWOHyorDMBpfo3rgFMdTelpxB2g8agAjVUQarcBIaHzSbrPqT4fh1uPgbUdepYytbFRe-CfbjmrlmlMe_2g0cGxytjqpIrCpzbNYc5VX0wgboyWqr2rDcjcFuu3Ra4v-IL9zKJ3nofSBYO73jGb8T9wH39gEOh3qZ2gx7f65J8APwvZYS8DAaH8jGPCG9tIaKWP2-QzaQ4O257g_ALhoXJIOs5g-pPPG4hKOBJ-GLc1v5804x3n-yTYboI4fq7fgjNIkGBqDAJuN0UmyRcTDqdti5HmPewPz1yVarPI5KnwR3GH6ruTiBMMhD0aOJIyPLZY822YIztul6MBPvYpXM05TVyg78dFrzqAYY8QmgyjKwcd6_IuDQ7cF6p0wa_pNAq8gKd6UksSgEQ0U_DbfvI3kvgiHqbw5BMty7d4JpENt4DY4KtPzOvzSy4MH9rL4GFIH-Z_IoXJG1VqfUvg4nBFM4uvvtEJUoSKt5OylHwysZzzYtWmuCmRLgv8NmgYBHBBGuumyY4rM0LsgdKdxaMhD9Yt9mEGBhPfYnVAL6N7x3DPa3rfANtKjLUccx07_jaQs6gXp3IrXCnLM7jvn0h0zVJurYEJbLaHpUSVFY5m4c1d5bcmx4qVFu-yCKyrfEc5wyA0WYPYAop8k7gV_f-zWL5oUWc27l3hBDf75RsNccTXa6UJSiD6T2GG1pfEpmzPFax5pIbBVt5kNEFmY_pKOgMocl0I2Y9MM9u1WHWzOFo-aRJpsuzdKk4wfWkZSviI0W1uSw width=90 height=70"
+                alt=""
+              />
+              <span>40-49 лет</span>
+            </div>
+            <div class="option" data-value="50+">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=f9b9d5019704ad05120e24e9ba18d47ba24fdcfe-7555069-images-thumbs&n=13 width=90 height=70"
+                alt=""
+              />
+              <span>50+</span>
+            </div>
+          </div>
+          <button class="btn" id="next1" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question2">
+          <h2>Выбери свою цель</h2>
+          <div class="wrapper wrapper-box">
+            <div class="option option-box" data-value="снизить вес">
+              Снизить вес
+            </div>
+            <div class="option option-box" data-value="вернуться к форме">
+              Вернуться к форме
+            </div>
+            <div class="option option-box" data-value="накачать мышцы">
+              Накачать мышцы
+            </div>
+          </div>
+          <button class="btn" id="next2" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question3">
+          <h2>Выбери первое</h2>
+          <div class="wrapper wrapper-box">
+            <div class="option option-box" data-value="лёгкость и гибкость">
+              Стройная лёгкость и гибкость
+            </div>
+            <div class="option option-box" data-value="баланс">
+              Подтянутая баланс между силой и стройностью
+            </div>
+            <div class="option option-box" data-value="спорт">
+              Спортивные развитые мышцы и высокая выносливость
+            </div>
+          </div>
+          <button class="btn" id="next3" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question4">
+          <h2>Какого размера одежду ты носишь?</h2>
+          <div class="wrapper wrapper-box">
+            <div class="option option-box" data-value="2XS, XS">2XS, XS</div>
+            <div class="option option-box" data-value="S, M">S, M</div>
+            <div class="option option-box" data-value="L, XL">L, XL</div>
+            <div class="option option-box" data-value="2XL, 3XL">2XL, 3XL</div>
+          </div>
+          <button class="btn" id="next4" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question5">
+          <h2>Выбери процент жира</h2>
+          <div class="wrapper">
+            <div class="option" data-value="10-19%">
+              <img
+                src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/nH23D8.webp"
+                alt=""
+              />
+              <span>10-19%</span>
+            </div>
+            <div class="option" data-value="20-29%">
+              <img
+                src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/sN7jtT.webp"
+                alt=""
+              />
+              <span>20-29%</span>
+            </div>
+            <div class="option" data-value="30-39%">
+              <img
+                src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/ePDPJl.webp"
+                alt=""
+              />
+              <span>30-39%</span>
+            </div>
+            <div class="option" data-value="более 40%">
+              <img
+                src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/pGVOtt.webp"
+                alt=""
+              />
+              <span>Более 40%</span>
+            </div>
+            <p>
+              Как правильно указать уровень жира? 10-19% - если отчетливо видны
+              мышцы пресса 20-29% - мышцы пресса не видны, но талия выражена
+              30-39% - мягкий силуэт с заметными округлостями в области бедер и
+              талии > 40% - тело выглядит достаточно мягким, талия визуально не
+              выделяется
+            </p>
+          </div>
+          <button class="btn" id="next5" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question6">
+          <h2>81% результата зависит от питания</h2>
+          <div class="wrapper">
+            <img
+              class="wrapper__img"
+              src="https://assets.fnlfx.com/01JEXCR03GGVCPCV065V8JYCTD/zdz-q2.webp"
+              alt=""
+            />
+            <p>
+              Чтобы сбросить вес, тебе необходимо: ✅ Не превышать дневную норму
+              калорий ✅ Потреблять достаточное количество белка для
+              восстановления и роста мышц
+            </p>
+            <div class="option option-box" data-value="2XS, XS">
+              Все понятно
+            </div>
+          </div>
+          <button class="btn" id="next6" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question7">
+          <h2>Выбери процент жира</h2>
+          <div class="wrapper">
+            <div
+              class="option option-box"
+              data-value="Стройное: легкость и гибкость"
+            >
+              Стройное: легкость и гибкость
+            </div>
+            <div
+              class="option option-box"
+              data-value="Подтянутое: баланс между силой и стройностью"
+            >
+              Подтянутое: баланс между силой и стройностью
+            </div>
+            <div
+              class="option option-box"
+              data-value="Спортивное: развитые мышцы и высокая выносливость"
+            >
+              Спортивное: развитые мышцы и высокая выносливость
+            </div>
+          </div>
+          <button class="btn" id="next7" disabled>Далее</button>
+        </div>
+
+        <div class="question" id="question8">
+          <h2>Введите свои данные</h2>
+          <div class="wrapper">
+            <label for="weight">Вес (кг):</label>
+            <input
+              type="number"
+              id="weight"
+              placeholder="Введите ваш вес"
+              required
+            />
+            <label for="height">Рост (см):</label>
+            <input
+              type="number"
+              id="height"
+              placeholder="Введите ваш рост"
+              required
+            />
+          </div>
+          <button class="btn" id="next8" disabled>Далее</button>
+        </div>
+
+        <!-- Добавьте последующие вопросы... -->
+      </div>
+      <div class="result" style="display: none">
+        <h2>Спасибо за участие!</h2>
+        <p>Ваши результаты будут обработаны.</p>
+
+        <p id="bmi-category"></p>
+        <p id="bmi-description"></p>
+
+        <!-- Шкала визуализации -->
+        <div class="wrapper">
+          <div id="progress-bar"></div>
+          <div
+            style="
+              position: relative;
+              width: 100%;
+              max-width: 400px;
+              height: 30px;
+              background: linear-gradient(to right, green, yellow, orange, red);
+              border: 1px solid #ccc;
+              border-radius: 5px;
+              margin-top: 10px;
+            "
+          >
+            <!-- Бегунок с ИМТ -->
+            <div
+              id="bmi-marker"
+              style="
+                position: absolute;
+                top: -5px;
+                width: 2px;
+                height: 40px;
+                background: black;
+              "
+            >
+              <span
+                id="bmi-value"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: -10px;
+                  background-color: white;
+                  color: black;
+                  padding: 2px 5px;
+                  border: 1px solid #000;
+                  border-radius: 5px;
+                  font-size: 12px;
+                "
+                >0</span
+              >
+            </div>
+          </div>
+
+          <p>
+            <strong>Текущий индекс массы тела</strong>:
+            <span id="bmi-result"></span>
+          </p>
+          <!-- <p><span id="bmi-category"></span></p>
+        <p id="bmi-description"></p> -->
+        </div>
+      </div>
     </div>
-  </div>
 
-  <script src="main.js" defer></script>
-</body>
-
+    <script src="main.js" defer></script>
+  </body>
 </html>
